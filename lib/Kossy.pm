@@ -431,6 +431,18 @@ path parameters captured by Router::Boom
 
 die and response immediately
 
+=item halt_text(status_code, message)
+
+die and response immediately
+
+set Content-Type to text/plain
+
+=item halt_no_content(status_code)
+
+die and response immediately
+
+set Content-Length to 0
+
 =item redirect($uri,status_code): Kossy::Response
 
 =item render($file,$args): Kossy::Response

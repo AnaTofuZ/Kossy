@@ -126,6 +126,18 @@ per-request object, herds request and response
 
     die and response immediately
 
+- halt\_text(status\_code, message)
+
+    die and response immediately
+
+    set Content-Type to text/plain
+
+- halt\_no\_content(status\_code)
+
+    die and response immediately
+
+    set Content-Length to 0
+
 - redirect($uri,status\_code): Kossy::Response
 - render($file,$args): Kossy::Response
 
